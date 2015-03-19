@@ -1,0 +1,13 @@
+[16:59:46] (omg) Failed to map task jobs to nodes: GridTaskSessionImpl [taskName=ZhlukovanieTask, dep=GridDeployment [ts=1426780786012, depMode=SHARED, clsLdr=sun.misc.Launcher$AppClassLoader@601bb1, clsLdrId=50cf2c23c41-10afc30e-4f7f-43b8-9c50-fe46ed2925f4, userVer=0, seqNum=1, loc=true, sampleCls=class zhlukovanie.ZhlukovanieTask, sampleClsName=zhlukovanie.ZhlukovanieTask, undeployed=false, pendingUndeploy=false, usage=0], taskClsName=zhlukovanie.ZhlukovanieTask, sesId=40cf2c23c41-10afc30e-4f7f-43b8-9c50-fe46ed2925f4, startTime=1426780786007, endTime=9223372036854775807, taskNodeId=3e7c15ca-47e3-43a4-9d22-7441a9e02e70, clsLdr=sun.misc.Launcher$AppClassLoader@601bb1, closed=true, topSpi=null, cpSpi=null, failSpi=null, loadSpi=null]
+class org.gridgain.grid.GridException: Task is not in waiting state (did you call get() on the future?): GridTaskSessionImpl [taskName=ZhlukovanieTask, dep=GridDeployment [ts=1426780786012, depMode=SHARED, clsLdr=sun.misc.Launcher$AppClassLoader@601bb1, clsLdrId=50cf2c23c41-10afc30e-4f7f-43b8-9c50-fe46ed2925f4, userVer=0, seqNum=1, loc=true, sampleCls=class zhlukovanie.ZhlukovanieTask, sampleClsName=zhlukovanie.ZhlukovanieTask, undeployed=false, pendingUndeploy=false, usage=0], taskClsName=zhlukovanie.ZhlukovanieTask, sesId=40cf2c23c41-10afc30e-4f7f-43b8-9c50-fe46ed2925f4, startTime=1426780786007, endTime=9223372036854775807, taskNodeId=3e7c15ca-47e3-43a4-9d22-7441a9e02e70, clsLdr=sun.misc.Launcher$AppClassLoader@601bb1, closed=true, topSpi=null, cpSpi=null, failSpi=null, loadSpi=null]
+	at org.gridgain.grid.kernal.processors.task.GridTaskWorker.processMappedJobs(GridTaskWorker.java:462)
+	at org.gridgain.grid.kernal.processors.task.GridTaskWorker.processMappedJobs(GridTaskWorker.java:462)
+[16:59:46] GridGain stopped OK [uptime=00:00:00:236]
+	at org.gridgain.grid.kernal.processors.task.GridTaskWorker.body(GridTaskWorker.java:397)
+	at org.gridgain.grid.util.worker.GridWorker$1.run(GridWorker.java:145)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at org.gridgain.grid.util.worker.GridWorker.run(GridWorker.java:190)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:744)
